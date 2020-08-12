@@ -558,7 +558,7 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .generator-form > * {
-    margin-right: 1.rem;
+    margin-right: 1rem;
   }
   .generator-form > :last-child {
     margin-right: 0;
