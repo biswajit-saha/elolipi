@@ -1,0 +1,31 @@
+{
+  "name": "elolipi",
+  "version": "1.0.0",
+  "description": "বাংলায় এলোমেলো অর্থহীন লেখা তৈরির করে নিন এক নিমেষে আর ব্যবহার করুন আপনার ডিজাইনে।",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "বাংলা",
+    "অর্থহীন লেখা",
+    "অর্থহীন লেখা",
+    "নমুনা লেখা",
+    "lorem ipsum",
+    "bangla"
+  ],
+  "author": "Biswajit Saha",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "browser-sync": "^2.26.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}

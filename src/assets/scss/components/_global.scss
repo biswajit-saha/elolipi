@@ -1,0 +1,68 @@
+body {
+    font-family: $site-font;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+h1, .h1 {
+    color: var(--text-color);
+}
+h1, .h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+input[type="number"] {
+    box-shadow: none;
+    height: 56px;
+    padding: 0 0.5rem 0 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+}
+select {
+    height: 56px;
+    padding: 0 3rem 0 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    &:focus {
+        border-color: var(--accent-color);
+        outline: none;
+    }
+}
+button, .btn {
+    padding: 0 2rem;
+    height: 56px;
+    line-height: 56px;
+    background: var(--text-color);
+    border: 1px solid var(--text-color);
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover, &:focus {
+        background: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        outline: none;
+    }
+}
+a {
+    color: var(--accent-color);
+    transition: all 0.2s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.container {
+    max-width: 1200px;
+    width: calc(100vw - 64px);
+    padding-left: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh + 1px);
+}
