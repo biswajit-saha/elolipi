@@ -82,6 +82,7 @@ var sourceText = [
 document.getElementById('ell-form').addEventListener('submit', function(e){
     e.preventDefault()
     var submitBtn = document.getElementById('submit');
+
     var resultContainer = document.getElementById('ell-result');
     resultContainer.style.visibility = 'hidden';
     var count = parseInt(document.getElementById('ell-number').value);
@@ -106,10 +107,10 @@ document.getElementById('ell-form').addEventListener('submit', function(e){
             }
             result = '<p>' + result.trim() + '</p>';
             break;
-        
+
         case 'sentence':
             for(i =0; i<count; i++) {
-                var rand = Math.floor(Math.random()*sourceText.length); 
+                var rand = Math.floor(Math.random()*sourceText.length);
                 result += sourceText[rand] + ' ';
             }
             result = '<p>' + result.trim() + '</p>';
@@ -121,7 +122,7 @@ document.getElementById('ell-form').addEventListener('submit', function(e){
                 var para = '';
                 var sentenceCount = Math.floor(Math.random()*5) + 3;
                 for(j = 0; j<sentenceCount; j++) {
-                    var rand = Math.floor(Math.random()*sourceText.length); 
+                    var rand = Math.floor(Math.random()*sourceText.length);
                     para += sourceText[rand] + ' ';
                 }
                 result += '<p>' + para + '</p>';
@@ -134,3 +135,6 @@ document.getElementById('ell-form').addEventListener('submit', function(e){
     resultContainer.style.visibility = 'visible';
     submitBtn.classList.remove('loading');
 });
+
+
+//Copy Text JS
