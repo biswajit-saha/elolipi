@@ -4,7 +4,8 @@
   "description": "বাংলায় এলোমেলো অর্থহীন লেখা তৈরির করে নিন এক নিমেষে আর ব্যবহার করুন আপনার ডিজাইনে।",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [
     "বাংলা",
