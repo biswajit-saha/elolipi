@@ -6,6 +6,8 @@
     <title>এলোলিপি - বাংলা এলোমেলো লেখা</title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/screen.min.css">
+    <link rel="stylesheet" href="./assets/css/tooltip.css">
+    <link rel="stylesheet" href="./assets/css/screen.css">
     <meta name="description" content="বাংলায় এলোমেলো অর্থহীন লেখা তৈরির করে নিন এক নিমেষে আর ব্যবহার করুন আপনার ডিজাইনে।">
     <link rel="shortcut icon" href="/elolipi/favicon.ico" type="image/x-icon">
     <meta property="og:title" content="এলোলিপি - বাংলা এলোমেলো লেখা">
@@ -42,19 +44,22 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                                 </div>
                             </div>
-                            <button type="submit" id="submit" class="submit-btn">দেখান</button>
+                            <button type="submit" onclick="copyActive()" id="submit" class="submit-btn">দেখান</button>
                         </form>
                     </div>
                 </div>
-                <div class="hero-right">
+                <div class="hero-right">      <!-- you can hide this image in mobile by using id="heroo" -->
                     <img class="hero-image" src="assets/images/hero-illustration.svg" alt="illustration image">
                 </div>
             </div>
-            <div class="result" id="ell-result"></div>
+            <button id="copybtn" style="width:40%;margin-left:30%" class="submit-btn" onclick="CopyToClipboard('ell-result')"><div id="status">কপি করুন</div></button>
+            <div style="padding:1%;"contenteditable="true" class="result" id="ell-result"></div>
             <footer class="site-footer">হৃদয়ের ভালোবাসা দিয়ে তৈরি করেছেন বিশ্বজীত সাহা। ভাল লাগলে বন্ধুদের সাথে শেয়ার করতে পারেন <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://biswajit-saha.github.io/elolipi/" target="_blank" title="Share on Facebook">ফেসবুক</a> অথবা <a class="twitter" href="https://twitter.com/share?text=%E0%A6%8F%E0%A6%B2%E0%A7%8B%E0%A6%B2%E0%A6%BF%E0%A6%AA%E0%A6%BF%20-%20%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%20%E0%A6%8F%E0%A6%B2%E0%A7%8B%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A7%8B%20%E0%A6%B2%E0%A7%87%E0%A6%96%E0%A6%BE&amp;url=https://biswajit-saha.github.io/elolipi/" target="_blank" title="Share on Twitter">টুইটার</a> -এ। অথবা <a href="https://github.com/biswajit-saha/elolipi">গিটহাব</a>-এ একটি স্টার দিতে পারেন।
             </footer>
         </div>
     </div>
     <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/copy.js">></script>
 </body>
 </html>

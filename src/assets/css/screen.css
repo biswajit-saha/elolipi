@@ -583,3 +583,15 @@ a:hover {
   border-top: 1px solid var(--border-color);
   text-align: center;
 }
+
+#heroo {
+display: block;
+}
+
+#copybtn { display:none;}
+
+@media screen and (max-width: 768px) {
+
+#heroo {display: none;}
+
+}
