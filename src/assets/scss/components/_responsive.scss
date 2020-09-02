@@ -1,0 +1,70 @@
+// Applicable for less than 900px width
+@media (max-width: 900px) {
+  // Reduce title font size
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  //Reduce form-wraper padding
+  .generator-form-wrap {
+    padding: 1.5rem;
+  }
+
+  //Reduce font size for all elements inside form
+  .generator-form * {
+    font-size: 1rem;
+  }
+}
+
+// Applicable for less than 750px width
+@media (max-width: 750px) {
+  // Remove left padding to move it center
+  .container {
+    padding: 0;
+  }
+
+  //Move the div in center
+  .site-hero {
+    justify-content: center;
+  }
+
+  //Remove the image
+  .hero-right {
+    display: none;
+  }
+
+  //Set direction row to column
+  .generator-form {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+
+  // Set Title in center and reduce margin
+  .hero-title {
+    text-align: center;
+    margin: 1.2rem 0;
+  }
+
+  // Reduce bottom margin
+  .site-header {
+    margin-bottom: 0;
+  }
+
+  //Disply flex-inline to block for 100% width
+  .generator-form-wrap {
+    display: block;
+  }
+
+  //Add some margin to create space
+  .submit-btn,
+  .relative,
+  .generator-form > span {
+    margin-top: 0.7rem;
+  }
+
+  //educe margin
+  .result {
+    margin-top: 1rem;
+  }
+}
