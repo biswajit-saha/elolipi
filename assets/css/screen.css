@@ -583,3 +583,50 @@ a:hover {
   border-top: 1px solid var(--border-color);
   text-align: center;
 }
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .generator-form-wrap {
+    padding: 1.5rem;
+  }
+  .generator-form * {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 0;
+  }
+  .site-hero {
+    justify-content: center;
+  }
+  .hero-right {
+    display: none;
+  }
+  .generator-form {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+  .hero-title {
+    text-align: center;
+    margin: 1.2rem 0;
+  }
+  .site-header {
+    margin-bottom: 0;
+  }
+  .generator-form-wrap {
+    display: block;
+  }
+  .submit-btn,
+  .relative,
+  .generator-form > span {
+    margin-top: 0.7rem;
+  }
+  .result {
+    margin-top: 1rem;
+  }
+}
