@@ -44,8 +44,7 @@ h1 {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -230,8 +229,7 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -265,8 +263,7 @@ textarea {
    */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -366,8 +363,7 @@ h1, .h1 {
 }
 
 input[type="number"] {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   height: 56px;
   padding: 0 0.5rem 0 1rem;
   border-radius: 5px;
@@ -401,7 +397,6 @@ button, .btn {
   color: var(--white);
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -413,7 +408,6 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 a {
   color: var(--accent-color);
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -427,13 +421,8 @@ a:hover {
   padding-left: 32px;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: calc(100vh + 1px);
 }
 
@@ -450,22 +439,14 @@ a:hover {
 }
 
 .site-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 6rem;
 }
 
 .hero-left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .hero-title {
@@ -473,9 +454,7 @@ a:hover {
 }
 
 .hero-right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+  flex: 0 0 40%;
 }
 
 .hero-right .hero-image {
@@ -483,23 +462,16 @@ a:hover {
 }
 
 .generator-form-wrap {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 2rem;
-  -webkit-box-shadow: var(--shadow);
-          box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
   border-radius: 15px;
   font-size: 1.25rem;
 }
 
 .generator-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .input-number {
@@ -509,8 +481,6 @@ a:hover {
 
 .relative {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -561,8 +531,7 @@ a:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-left: -15px;
   margin-top: -15px;
   -webkit-animation: spin 0.4s linear infinite;
@@ -571,23 +540,19 @@ a:hover {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -606,9 +571,7 @@ a:hover {
   margin: 4rem auto 6rem;
   font-size: 1.25rem;
   line-height: 1.8;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .result p {
@@ -638,21 +601,14 @@ a:hover {
     padding: 0;
   }
   .site-hero {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .hero-right {
     display: none;
   }
   .generator-form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem 3rem;
   }
   .hero-title {
